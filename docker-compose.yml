@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports: ['2181:2181']
+  kafka:
+    image: wurstmeister/kafka
+    depends_on: 
+      - zookeeper
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_HOST_NAME: kafka
+    ports: ['9092:9092']
+  postgres:
+    image: postgres:14
+    environment:
+      POSTGRES_DB: thousandeyes
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: secret
+    ports: ['5432:5432']
+  app:
+    build: .
+    ports: ['8080:8080']
+    depends_on: [kafka, postgres]
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/thousandeyes
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: secret
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+      KAFKA_TOPIC: test-results
+  

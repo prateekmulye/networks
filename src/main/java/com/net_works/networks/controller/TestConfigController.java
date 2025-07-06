@@ -9,6 +9,11 @@ import com.net_works.networks.model.TestConfig;
 import com.net_works.networks.repo.TestConfigRepository;
 import jakarta.validation.Valid;
 
+/**
+ * REST controller for managing test configurations.
+ * Provides endpoints to list, create, update, and delete test configurations.
+ */
+
 @RestController
 @RequestMapping("/api/test-config")
 public class TestConfigController {

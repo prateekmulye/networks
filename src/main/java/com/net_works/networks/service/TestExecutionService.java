@@ -7,12 +7,19 @@ import java.time.Instant;
 
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import com.net_works.networks.model.TestConfig;
 import com.net_works.networks.model.TestResult;
-import com.net_works.networks.repo.*;
 
+/**
+ * Service to execute network tests based on configurations stored in the database.
+ * This service periodically checks active test configurations, executes the tests,
+ * and sends the results to a Kafka topic for further processing.
+ */
+
+@Service
 public class TestExecutionService {
     private final TestConfigRepository configRepo;
     private final KafkaTemplate<String, TestResult> kafka;

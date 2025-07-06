@@ -3,6 +3,11 @@ package com.net_works.networks.model;
 import jakarta.persistence.*;
 import lombok.*;    
 
+/**
+ * Entity representing a network test configuration.
+ * This class is used to store the details of each test configuration in the database.
+ */
+
 @Entity
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
 public class TestConfig {

@@ -11,6 +11,11 @@ import org.springframework.kafka.support.serializer.JsonSerializer;
 
 import com.net_works.networks.model.TestResult;
 
+/**
+ * Configuration class for setting up Kafka producer.
+ * This class defines the producer factory and Kafka template used to send TestResult messages.
+ */
+
 @Configuration
 public class KafkaConfig {
     @Bean
