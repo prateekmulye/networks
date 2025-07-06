@@ -1,6 +1,6 @@
 # Synthetic Network Testing Microservice
 
-A Spring Boot–based microservice that lets you define, schedule, and execute synthetic HTTP and ICMP tests, stream results to Kafka, persist them in PostgreSQL, and run containerized via Docker/Kubernetes. Ideal for showcasing Java, Kafka, Docker, and cloud-native skills—aligned with ThousandEyes’ network-intelligence mission.
+A Spring Boot–based microservice that lets you define, schedule, and execute synthetic HTTP and ICMP tests, stream results to Kafka, persist them in PostgreSQL, and run containerized via Docker/Kubernetes. Ideal for showcasing Java, Kafka, Docker, and cloud-native skills.
 
 ---
 
