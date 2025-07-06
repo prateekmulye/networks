@@ -28,6 +28,6 @@ public class TestConfigControllerTest {
         ));
         mockMvc.perform(get("/api/test-configs"))
             .andExpect(status().isOk())
-            .andExpect(jsonPath("$[0].target").value("http://example.com"))
+            .andExpect(jsonPath("$[0].target").value("http://example.com"));
     }
 }
