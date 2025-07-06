@@ -76,4 +76,4 @@ flowchart TD
   D --> K
   K --> E
   E --> F
-  A -->|(optional) View results via REST| B
+  A -- optional: View results via REST --> B
