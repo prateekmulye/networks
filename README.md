@@ -77,3 +77,43 @@ flowchart TD
   K --> E
   E --> F
   A -- optional: View results via REST --> B
+````
+---
+
+## Future Enhancements
+
+Planned and potential improvements for this microservice include:
+
+- <img alt="pending" src="https://img.shields.io/badge/status-pending-yellow?style=flat-square"> **Advanced Alerting & Notification**  
+  Integrate with email, Slack, or PagerDuty for real-time alerts on test failures or threshold breaches.
+
+- <img alt="pending" src="https://img.shields.io/badge/status-pending-yellow?style=flat-square"> **Configurable Test Types**  
+  Support additional protocols (DNS, TCP, TLS, etc.) and custom test scripts.
+
+- <img alt="pending" src="https://img.shields.io/badge/status-pending-yellow?style=flat-square"> **Historical Analytics Dashboard**  
+  Build a web dashboard for visualizing trends, uptime, and performance metrics over time.
+
+- <img alt="pending" src="https://img.shields.io/badge/status-pending-yellow?style=flat-square"> **Role-Based Access Control (RBAC)**  
+  Add authentication and authorization for multi-user environments.
+
+- <img alt="pending" src="https://img.shields.io/badge/status-pending-yellow?style=flat-square"> **Distributed Test Agents**  
+  Deploy lightweight agents in multiple regions or clouds for global network visibility.
+
+- <img alt="pending" src="https://img.shields.io/badge/status-pending-yellow?style=flat-square"> **Self-Healing Automation**  
+  Integrate with orchestration tools to trigger automated remediation actions on failures.
+
+- <img alt="pending" src="https://img.shields.io/badge/status-pending-yellow?style=flat-square"> **AI-Powered Anomaly Detection**  
+  Use machine learning to detect unusual latency, packet loss, or outage patterns in test results, and proactively surface incidents.
+
+- <img alt="pending" src="https://img.shields.io/badge/status-pending-yellow?style=flat-square"> **Predictive Analytics**  
+  Leverage AI to forecast potential network degradations based on historical data and trends.
+
+- <img alt="pending" src="https://img.shields.io/badge/status-pending-yellow?style=flat-square"> **Natural Language Interface**  
+  Allow users to configure and query tests using natural language (e.g., via a chatbot or voice assistant).
+
+- <img alt="pending" src="https://img.shields.io/badge/status-pending-yellow?style=flat-square"> **Integration with Observability Platforms**  
+  Export metrics to Prometheus, Grafana, or OpenTelemetry for unified monitoring.
+
+---
+
+Feel free to contribute ideas or open issues for additional enhancements!
